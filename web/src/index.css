@@ -1,29 +1,27 @@
 @font-face {
-  font-family: 'MonumentExtended-Regular';
-  src:
-          local('MonumentExtended-Regular'),
-          local('MonumentExtended-Regular'),
-          url('./fonts/MonumentExtended-Regular.otf');
+    font-family: 'MonumentExtended-Regular';
+    src: local('MonumentExtended-Regular'),
+    local('MonumentExtended-Regular'),
+    url('./fonts/MonumentExtended-Regular.otf');
 }
 
 @font-face {
-  font-family: 'MonumentExtended-Ultrabold';
-  src:
-          local('MonumentExtended-Ultrabold'),
-          local('MonumentExtended-Ultrabold'),
-          url('./fonts/MonumentExtended-Ultrabold.otf');
+    font-family: 'MonumentExtended-Ultrabold';
+    src: local('MonumentExtended-Ultrabold'),
+    local('MonumentExtended-Ultrabold'),
+    url('./fonts/MonumentExtended-Ultrabold.otf');
 }
 
 body {
-  margin: 0;
-  font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }

@@ -1,0 +1,22 @@
+@import 'react-awesome-slider/src/core/constants.scss';
+
+.#{$root-element} {
+  --slider-height-percentage: 60%;
+  --slider-transition-duration: 300ms;
+  --organic-arrow-thickness: 4px;
+  --organic-arrow-border-radius: 0px;
+  --organic-arrow-height: 40px;
+  --organic-arrow-color: transparent;
+  --control-button-width: 50%;
+  --control-button-height: 100%;
+  --control-button-background: transparent;
+  --control-bullet-color: transparent;
+  --control-bullet-active-color: transparent;
+  --loader-bar-color: transparent;
+  --loader-bar-height: 0px;
+}
+
+.awssld__startUp {
+  background-color: black;
+  z-index: 0;
+}
