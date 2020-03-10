@@ -29,17 +29,27 @@ const StartupScreen = <View
 
 export default function App() {
     const [images, setImages] = useState([]);
+    const [isComingSoon, setIsComingSoon] = useState(false);
 
     useEffect(() => {
         const db = firebase.firestore();
+        db.collection("setup").doc("production").get().then((doc) => {
+            setIsComingSoon(doc.data().isComingSoon);
+        });
         db.collection("contenus").orderBy('position').get().then((querySnapshot) => {
             setImages(querySnapshot.docs.map(value => ({
                 source: value.data().image
             })));
         })
     }, []);
-    return (
-        <AwesomeSlider bullets={false} organicArrows={false} fillParent media={images} startupScreen={StartupScreen}
-                       startupDelay={1000}/>
-    );
+    if (!isComingSoon) {
+        return (
+            <AwesomeSlider startupDelay={0} bullets={false} organicArrows={false} fillParent
+                           startupScreen={StartupScreen}
+                           media={images}/>
+        )
+    } else {
+        return StartupScreen
+    }
+
 }
