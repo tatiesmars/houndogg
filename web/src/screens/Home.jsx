@@ -8,9 +8,12 @@ export default () => {
     useEffect(() => {
         const db = firebase.firestore();
         db.collection("contenus").orderBy('position').get().then((querySnapshot) => {
-            setImages(querySnapshot.docs.map(value => ({
-                source: value.data().image
-            })));
+            setImages(querySnapshot.docs.map(value => {
+                console.log(value.data())
+                return {
+                    source: value.data().image
+                }
+            }));
         })
     }, []);
     return (

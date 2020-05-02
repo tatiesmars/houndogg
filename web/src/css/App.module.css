@@ -43,6 +43,8 @@ html, body {
 .sideMargin {
     margin-left: 1.5625rem;
     margin-right: 1.5625rem;
+    margin-bottom: 1.5625rem;
+    margin-top: 1.5625rem;
 }
 
 .column {

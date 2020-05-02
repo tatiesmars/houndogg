@@ -68,14 +68,20 @@ export default () => {
             </Box>
 
             <Box shrink row center>
-                <p>We're only on Instagram and Youtube and will keep it this way.<br/>
+                <p>We're only on <a style={{color: '#00f'}} href={"instagram.com/houndogghoundogg"}>Instagram</a> and <a
+                    href={"https://www.youtube.com/channel/UCKwYL4PowB-Gox0e4pjDbiA"}
+                    style={{color: '#f00'}}>Youtube</a> and
+                    will keep it
+                    this way.<br/>
                     Let us suggest this newsletter if you want early infos, discounts or a little more content.<br/>
                     We don't believe in information overload so we won't bother you if there's nothing new.</p>
 
 
             </Box>
 
-            <MailchimpSubscribe/>
+            <Box style={{marginTop: 18}} row center>
+                <MailchimpSubscribe/>
+            </Box>
 
 
             <Box row center>
@@ -84,13 +90,13 @@ export default () => {
 
             <Box row center>
                 <p>If you have any questions or just want to chat with us, email us at<br/>
-                    <a href={"mailto:houndogghoundogg@gmail.com"}>houndogghoundogg[@]gmail.com</a><br/>
+                    <a href={"mailto:contact@houndogg.net"}>contact@houndogg.net</a><br/>
                     or just reach <a href="https://instagram.com/houndogghoundogg">@houndogghoundogg</a> on Instagram.
                 </p>
             </Box>
 
             <Box row center>
-                <a><h6>TERMS</h6></a>
+                <Link to="/terms"><h6>TERMS</h6></Link>
             </Box>
         </>
     )

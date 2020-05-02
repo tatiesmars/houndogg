@@ -8,20 +8,24 @@ import StartupScreen from "./screens/StartupScreen";
 import Home from "./screens/Home";
 import About from "./screens/About";
 import Video from "./screens/Video";
+import Terms from "./screens/Terms";
 
-export default function App() {
+export default function App(props) {
     const [isComingSoon, setIsComingSoon] = useState(false);
-
+    const urlParams = new URLSearchParams(window.location.search);
     useEffect(() => {
         const db = firebase.firestore();
         db.collection("setup").doc("production").get().then((doc) => {
             setIsComingSoon(doc.data().isComingSoon);
         });
     }, []);
-    if (true) {
+    if (urlParams.get('preview')) {
         return (
             <Router>
                 <Switch>
+                    <Route path="/terms">
+                        <Terms/>
+                    </Route>
                     <Route path="/video">
                         <Video/>
                     </Route>
