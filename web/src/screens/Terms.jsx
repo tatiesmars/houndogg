@@ -29,11 +29,11 @@ export default () => {
                     Every images and photographs found on this website and its webstore are the property of houndogg and
                     must not be used without the permission of its owner.<br/><br/>
 
-                    The following terms are concluded between houndogg (the seller) and you (the customer). Your use of
+                    The following terms and conditions are concluded between houndogg (the seller) and you (the customer). Your use of
                     houndogg.net (the website and its webstore)
-                    indicates your acceptance of these terms.<br/>
-                    All terms are subject to changes without prior notice to the customer.<br/>
-                    Any changes made to the terms will be updated on this page.
+                    indicates your acceptance of these terms and conditions.<br/>
+                    All terms and conditions are subject to changes without prior notice to the customer.<br/>
+                    Any changes made to the terms and conditions will be updated on this page.
                 </p>
             </Box>
 
@@ -44,7 +44,7 @@ export default () => {
             <Box sideMargin shrink row center>
                 <p>houndogg accepts most major credit cards. <br/>
                     All payments are regulated via Stripe to ensure strictly secured transactions. <br/>
-                    Paypal payments are also accepted
+                    Paypal payments are also accepted.
                 </p>
 
             </Box>
@@ -77,11 +77,9 @@ export default () => {
                     All returned items must come in the same condition they were sold in.<br/>
                     All shipping expenses for returns will be at the customer’s charge.<br/>
                     <br/>
-                    Two options are presented to the customer returning an item:<br/>
-                    the replacement of the returned item by the same item in an other size or an other color<br/>
-                    the amount of the order issued to the customer as a webstore credit<br/>
-                    If the three conditions therefore mentioned are not respected by the customer we will not be able to
-                    process any replacement or any credit.
+                    If the four conditions therefore mentioned are not respected by the customer we will not be able to
+                    process any replacement or any credit.<br/>
+                    Two options are presented to the customer returning an item: the replacement of the returned item by the same item in another size or another color (subject to availability) or the amount of the order issued to the customer as a webstore credit.                   
                 </p>
             </Box>
 
@@ -95,7 +93,7 @@ export default () => {
                     houndogg will not sell nor share any of these informations.
                 </p>
             </Box>
-            <Box sideMargin row center>
+            <Box sideMargin row center column>
                 <img src={require("../images/trademarked_houndogg.png")}
                      style={{
                          zIndex: 1000,
@@ -105,8 +103,6 @@ export default () => {
                          resizeMode: 'contain'
                      }}
                      alt="logo"/>
-            </Box>
-            <Box sideMargin row center>
                 <p>
                     21 rue Verdière<br/>
                     17000 La Rochelle<br/>

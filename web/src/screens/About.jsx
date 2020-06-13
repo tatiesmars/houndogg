@@ -58,9 +58,8 @@ export default () => {
             <Box shrink row center>
                 <p>houndogg is a creative studio focused<br/>
                     on ready-to-wear garments inspired <br/>
-                    by the heritage of hunt and what is <br/>
-                    commonly called street culture. <br/><br/>
-                    Born in the woods, raised in the streets.</p>
+                    by the game hunting heritage and what is <br/>
+                    commonly called street culture.</p>
             </Box>
 
             <Box row center>
@@ -68,12 +67,12 @@ export default () => {
             </Box>
 
             <Box shrink row center>
-                <p>We're only on <a style={{color: '#00f'}} href={"instagram.com/houndogghoundogg"}>Instagram</a> and <a
+                <p>We're only on <a style={{color: '#0000ff', textDecoration: 'none'}} href={"instagram.com/houndogghoundogg"}>Instagram</a> and <a
                     href={"https://www.youtube.com/channel/UCKwYL4PowB-Gox0e4pjDbiA"}
-                    style={{color: '#f00'}}>Youtube</a> and
+                    style={{color: '#ff0000', textDecoration: 'none'}}>Youtube</a> and
                     will keep it
                     this way.<br/>
-                    Let us suggest this newsletter if you want early infos, discounts or a little more content.<br/>
+                    If you want early infos, discounts or a little more content, let us suggest this newsletter.<br/>
                     We don't believe in information overload so we won't bother you if there's nothing new.</p>
 
 
@@ -90,13 +89,13 @@ export default () => {
 
             <Box row center>
                 <p>If you have any questions or just want to chat with us, email us at<br/>
-                    <a href={"mailto:contact@houndogg.net"}>contact@houndogg.net</a><br/>
-                    or just reach <a href="https://instagram.com/houndogghoundogg">@houndogghoundogg</a> on Instagram.
+                    <a style={{color: '#000000'}} href={"mailto:contact@houndogg.net"}>contact@houndogg.net</a><br/>
+                    or just reach <a style={{color: '#000000'}} href="https://instagram.com/houndogghoundogg">@houndogghoundogg</a> on Instagram.
                 </p>
             </Box>
 
             <Box row center>
-                <Link to="/terms"><h6>TERMS</h6></Link>
+                <Link style={{color: '#000000', textDecoration: 'none'}} to="/terms"><h6>TERMS</h6></Link>
             </Box>
         </>
     )
