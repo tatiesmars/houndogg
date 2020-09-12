@@ -1,41 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R9LEE7YV4C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-    <meta name="theme-color" content="#000000"/>
-    <meta
-            name="description"
-            content="Coming soon..."
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png"/>
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>
-    <title>houndogg</title>
-    <meta property="og:title" content="houndogg"/>
-    <meta property="og:site_name" content="houndogg"/>
-    <meta property="og:description"
-          content="Coming soon..."/>
-    <meta property="og:url" content="http://houn-dogg.com/"/>
-    <meta property="og:image" content="%PUBLIC_URL%/logoWithText192.png"/>
-    <style>
-        /* These styles make the body full-height */
-        html, body {
-            height: 100%;
-            background-color: #fff;
-        }
+    function gtag() {
+      dataLayer.push(arguments);
+    }
 
-        /* These styles disable body scrolling if you are using <ScrollView> */
-        /*body { overflow: hidden; }*/
-        /* These styles make the root element full-height */
-        #react-root {
-            display: flex;
-            height: 100%;
-            background-color: #fff;
-        }
-    </style>
+    gtag('js', new Date());
+
+    gtag('config', 'G-R9LEE7YV4C');
+  </script>
+  <meta charset="utf-8"/>
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#000000"/>
+  <meta
+    name="description"
+    content="Coming soon..."
+  />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png"/>
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>
+  <title>houndogg</title>
+  <meta property="og:title" content="houndogg"/>
+  <meta property="og:site_name" content="houndogg"/>
+  <meta property="og:description"
+    content="Coming soon..."/>
+  <meta property="og:url" content="http://houn-dogg.com/"/>
+  <meta property="og:image" content="%PUBLIC_URL%/logoWithText192.png"/>
+  <style>
+    /* These styles make the body full-height */
+    html, body {
+      height: 100%;
+      background-color: #fff;
+    }
+
+    /* These styles disable body scrolling if you are using <ScrollView> */
+    /*body { overflow: hidden; }*/
+    /* These styles make the root element full-height */
+    #react-root {
+      display: flex;
+      height: 100%;
+      background-color: #fff;
+    }
+  </style>
+
+  <!-- MailerLite Universal -->
+  <script>
+    (function (m, a, i, l, e, r) {
+      m['MailerLiteObject'] = e;
+
+      function f() {
+        var c = { a: arguments, q: [] };
+        var r = this.push(c);
+        return "number" != typeof r ? r : f.bind(c.q);
+      }
+
+      f.q = f.q || [];
+      m[e] = m[e] || f.bind(f.q);
+      m[e].q = m[e].q || f.q;
+      r = a.createElement(i);
+      var _ = a.getElementsByTagName(i)[0];
+      r.async = 1;
+      r.src = l + '?v' + (~~(new Date().getTime() / 1000000));
+      _.parentNode.insertBefore(r, _);
+    })(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+    var ml_account = ml('accounts', '2041590', 'u5i7x5e7q5', 'load');
+  </script>
+  <!-- End MailerLite Universal -->
 </head>
 <body>
 

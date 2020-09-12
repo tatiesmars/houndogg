@@ -1,103 +1,119 @@
-import React from "react";
-import {Link} from "react-router-dom";
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import Box from '../components/Box'
 
 var MailchimpSubscribe = function () {
-    return (
-        <div>
-            {/* Begin Mailchimp Signup Form */}
-            <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet"
-                  type="text/css"/>
-            <style type="text/css"
-                   dangerouslySetInnerHTML={{__html: "\n\t#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}\n\t/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.\n\t   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */\n"}}/>
-            <div id="mc_embed_signup">
-                <form
-                    action="https://houn-dogg.us19.list-manage.com/subscribe/post?u=0c3c42197d113bfe417cc05dd&id=289790a27f"
-                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate"
-                    target="_blank" noValidate>
-                    <div id="mc_embed_signup_scroll">
-                        <input type="email" defaultValue={""} name="EMAIL" className="email" id="mce-EMAIL"
-                               placeholder="email address" required/>
-                        {/* real people should not fill this in and expect good things - do not remove this or risk form bot signups*/}
-                        <div style={{position: 'absolute', left: '-5000px'}} aria-hidden="true"><input type="text"
-                                                                                                       name="b_0c3c42197d113bfe417cc05dd_289790a27f"
-                                                                                                       tabIndex={-1}
-                                                                                                       defaultValue={""}/>
-                        </div>
-                        <div className="clear"><input type="submit" defaultValue="Subscribe" name="subscribe"
-                                                      id="mc-embedded-subscribe" className="button"/></div>
-                    </div>
-                </form>
-            </div>
-            {/*End mc_embed_signup*/}
-        </div>
-    );
+
+  return (
+    <div style={{
+      flex: 1,
+    }}>
+      <div className="ml-form-embed"
+        data-account="2041590:u5i7x5e7q5"
+        data-form="2049574:d2d9k0">
+      </div>
+    </div>
+  );
 };
 
 
 export default () => {
-    return (
-        <>
-            <Link to="/">
-                <img src={require("../images/logoBlack.png")}
-                     style={{
-                         zIndex: 1000,
-                         padding: '8px',
-                         position: 'absolute',
-                         height: '48.64px',
-                         width: '73.72px',
-                         resizeMode: 'contain'
-                     }}
-                     alt="logo"/>
-            </Link>
+  useEffect(() => {
+    (function (m, a, i, l, e, r) {
+      m['MailerLiteObject'] = e;
 
-            <Box row center>
-                <h2>ABOUT</h2>
-            </Box>
+      function f() {
+        var c = { a: arguments, q: [] };
+        var r = this.push(c);
+        return "number" != typeof r ? r : f.bind(c.q);
+      }
 
-            <Box shrink row center>
-                <p>houndogg is a creative studio focused<br/>
-                    on ready-to-wear garments inspired <br/>
-                    by the game hunting heritage and what is <br/>
-                    commonly called street culture.</p>
-            </Box>
+      f.q = f.q || [];
+      m[e] = m[e] || f.bind(f.q);
+      m[e].q = m[e].q || f.q;
+      r = a.createElement(i);
+      var _ = a.getElementsByTagName(i)[0];
+      r.async = 1;
+      r.src = l + '?v' + (~~(new Date().getTime() / 1000000));
+      _.parentNode.insertBefore(r, _);
+    })(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
 
-            <Box row center>
-                <h4>NEWS</h4>
-            </Box>
+    window.ml('accounts', '2041590', 'u5i7x5e7q5', 'load')
+  }, [])
+  return (
+    <div className={"about"}>
+      <Box column spaceBetween>
+        <Link to="/">
+          <img src={require("../images/logoBlack.png")}
+            style={{
+              zIndex: 1000,
+              padding: '8px',
+              position: 'absolute',
+              height: '48.64px',
+              width: '73.72px',
+              resizeMode: 'contain'
+            }}
+            alt="logo"/>
+          <p style={{
+            zIndex: 1000,
+            left: '13px',
+            position: 'absolute',
+            padding: '8px',
+            color: 'black',
+            top: '60px',
+            fontWeight: 'bold'
+          }}>BACK</p>
+        </Link>
 
-            <Box shrink row center>
-                <p>We're only on <a style={{color: '#0000ff', textDecoration: 'none'}} href={"instagram.com/houndogghoundogg"}>Instagram</a> and <a
-                    href={"https://www.youtube.com/channel/UCKwYL4PowB-Gox0e4pjDbiA"}
-                    style={{color: '#ff0000', textDecoration: 'none'}}>Youtube</a> and
-                    will keep it
-                    this way.<br/>
-                    If you want early infos, discounts or a little more content, let us suggest this newsletter.<br/>
-                    We don't believe in information overload so we won't bother you if there's nothing new.</p>
+        <Box sideMargin row center>
+          <h2>ABOUT</h2>
+        </Box>
+
+        <Box sideMargin row center>
+          <p>houndogg is a creative studio focused<br/>
+            on ready-to-wear garments inspired <br/>
+            by the game hunting heritage and what is <br/>
+            commonly called street culture.</p>
+        </Box>
+
+        <Box sideMargin row center>
+          <h4>NEWS</h4>
+        </Box>
+
+        <Box sideMargin row center>
+          <p>We're only on <a style={{ color: '#0000ff', textDecoration: 'none' }}
+            href={"https://instagram.com/houndogghoundogg"}>Instagram</a> and <a
+            href={"https://www.youtube.com/channel/UCKwYL4PowB-Gox0e4pjDbiA"}
+            style={{ color: '#ff0000', textDecoration: 'none' }}>Youtube</a> and
+            will keep it
+            this way.<br/>
+            If you want early infos, discounts or a little more content, let us suggest this newsletter.<br/>
+            We don't believe in information overload so we won't bother you if there's nothing new.</p>
 
 
-            </Box>
+        </Box>
 
-            <Box style={{marginTop: 18}} row center>
-                <MailchimpSubscribe/>
-            </Box>
+        <Box style={{ marginTop: 18 }} row center>
+          <MailchimpSubscribe/>
+        </Box>
 
+        <Box sideMargin row center>
+          <h4>CONTACT</h4>
+        </Box>
 
-            <Box row center>
-                <h4>CONTACT</h4>
-            </Box>
+        <Box sideMargin row center>
+          <p>If you have any questions or just want to chat with us, email us at<br/>
+            <a style={{ color: '#000000' }} href={"mailto:contact@houndogg.net"}>contact@houndogg.net</a><br/>
+            or just reach <a style={{ color: '#000000' }}
+              href="https://instagram.com/houndogghoundogg">@houndogghoundogg</a> on Instagram.
+          </p>
+        </Box>
 
-            <Box row center>
-                <p>If you have any questions or just want to chat with us, email us at<br/>
-                    <a style={{color: '#000000'}} href={"mailto:contact@houndogg.net"}>contact@houndogg.net</a><br/>
-                    or just reach <a style={{color: '#000000'}} href="https://instagram.com/houndogghoundogg">@houndogghoundogg</a> on Instagram.
-                </p>
-            </Box>
-
-            <Box row center>
-                <Link style={{color: '#000000', textDecoration: 'none'}} to="/terms"><h6>TERMS</h6></Link>
-            </Box>
-        </>
-    )
+        <Box sideMargin row center>
+          <Link style={{ color: '#000000', textDecoration: 'none' }} to="/terms"><h6>TERMS</h6></Link>
+        </Box>
+      </Box>
+    </div>
+  )
 }
 
