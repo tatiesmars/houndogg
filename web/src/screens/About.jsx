@@ -71,9 +71,10 @@ export default () => {
 
         <Box sideMargin row center>
           <p>houndogg is a creative studio focused<br/>
-            on ready-to-wear garments inspired <br/>
-            by the game hunting heritage and what is <br/>
-            commonly called street culture.</p>
+            on ready-to-wear garments<br/>
+            inspired by the game hunting heritage<br/>
+            and what is commonly called<br/>
+            street culture.</p>
         </Box>
 
         <Box sideMargin row center>

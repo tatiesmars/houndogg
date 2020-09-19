@@ -47,6 +47,13 @@ html, body {
     margin-top: 1.5625rem;
 }
 
+.smallSideMargin {
+    margin-left: 0rem;
+    margin-right: 0rem;
+    margin-bottom: 1.5625rem;
+    margin-top: 1.5625rem;
+}
+
 .column {
     display: flex;
     flex-direction: column;
