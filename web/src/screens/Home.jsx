@@ -8,7 +8,8 @@ export default () => {
   useEffect(() => {
     const db = firebase.firestore();
     db.collection("contenus").orderBy('position').get().then((querySnapshot) => {
-      setImages(querySnapshot.docs.map(value => {
+      const result = querySnapshot.docs.filter((element) => element.data().main);
+      setImages(result.map(value => {
         return {
           source: value.data().image
         }
@@ -59,8 +60,9 @@ export default () => {
           fontWeight: 'bold'
         }}>VIDEO</p>
       </Link>
-      <AwesomeSlider bullets={false} organicArrows={false} fillParent
+      <AwesomeSlider bullets={false} organicArrows={false} infinite={images.length > 1} fillParent
         media={images}/>
+
     </>
   )
 }

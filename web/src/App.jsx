@@ -9,6 +9,7 @@ import Home from "./screens/Home";
 import About from "./screens/About";
 import Video from "./screens/Video";
 import Terms from "./screens/Terms";
+import SingleImageScreen from './screens/SingleImageScreen';
 
 export default function App(props) {
     const [isComingSoon, setIsComingSoon] = useState(false);
@@ -39,7 +40,7 @@ export default function App(props) {
             </Router>
         )
     } else {
-        return <StartupScreen/>
+        return <SingleImageScreen/>
     }
 
 }

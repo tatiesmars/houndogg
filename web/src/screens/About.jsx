@@ -62,7 +62,7 @@ export default () => {
             color: 'black',
             top: '60px',
             fontWeight: 'bold'
-          }}>BACK</p>
+          }}>HOME</p>
         </Link>
 
         <Box sideMargin row center>
